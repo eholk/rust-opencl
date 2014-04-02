@@ -1,6 +1,6 @@
-#[feature(link_args)];
-#[feature(macro_rules)];
-#[feature(globs)];
+#![feature(link_args)]
+#![feature(macro_rules)]
+#![feature(globs)]
 
 extern crate std;
 extern crate OpenCL = "OpenCL#0.2";
@@ -43,7 +43,7 @@ pub fn test_all_platforms_devices(test: |Device, Context, CommandQueue|)
 }
 
 mod mem {
-    use std::vec;
+    use std::vec::Vec;
     use OpenCL::mem::{Read, Write};
 
     fn read_write<R: Read, W: Write>(src: &W, dst: &mut R)

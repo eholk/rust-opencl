@@ -1,4 +1,4 @@
-#[feature(link_args)];
+#![feature(link_args)]
 extern crate OpenCL;
 
 use std::io::fs::File;

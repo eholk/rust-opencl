@@ -2,8 +2,6 @@
 #![allow(missing_copy_implementations)]
 #![allow(non_upper_case_globals)]
 
-#![feature(static_mutex)]
-
 //! OpenCL bindings for Rust.
 
 extern crate libc;
